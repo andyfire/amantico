@@ -3,94 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanzamento - Sviluppo Software e Mobile App di Qualità</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Avanzamento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="logo-container">
-                <svg width="50" height="50" viewBox="0 0 100 100">
-                    <defs>
-                        <pattern id="web" patternUnits="userSpaceOnUse" width="100" height="100">
-                            <path d="M50 0 L50 100 M0 50 L100 50 M12.5 12.5 L87.5 87.5 M12.5 87.5 L87.5 12.5" stroke="#3498DB" stroke-width="2"/>
-                            <circle cx="50" cy="50" r="10" stroke="#3498DB" stroke-width="2" fill="none"/>
-                            <circle cx="50" cy="50" r="25" stroke="#3498DB" stroke-width="2" fill="none"/>
-                            <circle cx="50" cy="50" r="40" stroke="#3498DB" stroke-width="2" fill="none"/>
-                        </pattern>
-                    </defs>
-                    <circle cx="50" cy="50" r="48" fill="url(#web)" stroke="#F9D907" stroke-width="4"/>
-                    <g transform="translate(35, 35) scale(0.3)">
-                        <path d="M50 25 C 40 25, 30 30, 30 40 L 30 60 C 30 70, 40 75, 50 75 C 60 75, 70 70, 70 60 L 70 40 C 70 30, 60 25, 50 25 Z M 50 35 C 55 35, 60 40, 60 45 L 60 55 C 60 60, 55 65, 50 65 C 45 65, 40 60, 40 55 L 40 45 C 40 40, 45 35, 50 35 Z" fill="#F9D907"/>
-                        <path d="M50 15 L 50 25 M50 75 L 50 85 M25 50 L 15 50 M75 50 L 85 50 M35 35 L 25 25 M65 65 L 75 75 M35 65 L 25 75 M65 35 L 75 25" stroke="#F9D907" stroke-width="5" stroke-linecap="round"/>
-                    </g>
-                </svg>
-                <span class="logo-text">Avanzamento</span>
+            <div class="logo">
+                <img src="logo.svg" alt="Avanzamento Logo">
+                <h1>Avanzamento</h1>
             </div>
-            <div class="lang-selector">
-                <select id="language-selector" class="lang-select">
-                    <option value="it">IT</option>
-                    <option value="en">EN</option>
-                </select>
+            <nav>
+                <ul>
+                    <li><a href="#servizi" data-it="Servizi" data-en="Services">Servizi</a></li>
+                    <li><a href="#come-funziona" data-it="Come Funziona" data-en="How it Works">Come Funziona</a></li>
+                    <li><a href="#chi-siamo" data-it="Chi Siamo" data-en="About Us">Chi Siamo</a></li>
+                    <li><a href="#contatti" data-it="Contatti" data-en="Contacts">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <a href="#" class="lang-it active">IT</a>
+                <a href="#" class="lang-en">EN</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero-section">
+        <section id="hero">
             <div class="container">
-                <h1 class="hero-title" data-key="hero-title">Il tuo ponte per lo sviluppo software tra Italia e India.</h1>
-                <p class="hero-subtitle" data-key="hero-subtitle">Alta qualità, project manager italiani in loco, zero rischi.</p>
-                <a href="#contact" class="cta-button" data-key="hero-cta">Parla con noi</a>
-            </div>
-        </section>
-
-        <section class="services-section">
-            <div class="container">
-                <div class="service-card">
-                    <h2 class="service-title" data-key="service-1-title">Sviluppo Web, Software e App Mobile</h2>
-                    <p class="service-description" data-key="service-1-desc">Copriamo tutte le tue esigenze di sviluppo, dal sito vetrina all'e-commerce, dal gestionalale su misura all'app nativa.</p>
-                </div>
-                <div class="service-card">
-                    <h2 class="service-title" data-key="service-2-title">Partnership Controllata</h2>
-                    <p class="service-description" data-key="service-2-desc">Collaboriamo con aziende indiane selezionate, ma la gestione del progetto è 100% italiana e in loco.</p>
-                </div>
-                <div class="service-card">
-                    <h2 class="service-title" data-key="service-3-title">Qualità e Sicurezza Garantite</h2>
-                    <p class="service-description" data-key="service-3-desc">Il nostro team di PM italiani in India assicura standard qualitativi elevati, sicurezza dei dati e trasparenza totale.</p>
+                <div class="hero-text">
+                    <h2 data-it="Il ponte tra qualità italiana e outsourcing indiano controllato." data-en="The bridge between Italian quality and controlled Indian outsourcing.">Il ponte tra qualità italiana e outsourcing indiano controllato.</h2>
+                    <p data-it="Garantiamo prodotti di alta qualità a basso costo, con la sicurezza di project manager italiani in loco." data-en="We guarantee high quality products at low cost, with the security of Italian project managers on site.">Garantiamo prodotti di alta qualità a basso costo, con la sicurezza di project manager italiani in loco.</p>
+                    <a href="#servizi" class="btn" data-it="Scopri di più" data-en="Discover more">Scopri di più</a>
                 </div>
             </div>
         </section>
 
-        <section class="why-us-section">
+        <section id="servizi">
             <div class="container">
-                <h2 class="section-title" data-key="why-us-title">Perché Noi</h2>
-                <div class="why-us-content">
-                    <div class="why-us-text">
-                        <p data-key="why-us-p1">Siamo l'anello di congiunzione tra le aziende italiane e l'outsourcing indiano di qualità. Gestiamo i tuoi progetti di sviluppo con project manager italiani presenti fisicamente in India.</p>
-                        <p data-key="why-us-p2">Questo significa che avrai la convenienza dell'outsourcing senza i rischi: niente incomprensioni culturali, nessuna barriera linguistica, e la garanzia che i tuoi dati e il tuo progetto siano sempre al sicuro.</p>
-                        <p data-key="why-us-p3">La nostra formula è semplice: supervisione italiana, sviluppo indiano. Il risultato è un prodotto di alta qualità, consegnato nei tempi previsti e a un costo competitivo.</p>
+                <h2 data-it="I Nostri Servizi" data-en="Our Services">I Nostri Servizi</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="web-development.svg" alt="Sviluppo Web">
+                        <h3 data-it="Sviluppo Web" data-en="Web Development">Sviluppo Web</h3>
+                        <p data-it="Creiamo siti web moderni, performanti e su misura per le tue esigenze." data-en="We create modern, high-performance and tailor-made websites for your needs.">Creiamo siti web moderni, performanti e su misura per le tue esigenze.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="mobile-app.svg" alt="Mobile App">
+                        <h3 data-it="Mobile App" data-en="Mobile App">Mobile App</h3>
+                        <p data-it="Sviluppiamo applicazioni mobili native e ibride per iOS e Android." data-en="We develop native and hybrid mobile applications for iOS and Android.">Sviluppiamo applicazioni mobili native e ibride per iOS e Android.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="software-custom.svg" alt="Software Custom">
+                        <h3 data-it="Software Custom" data-en="Custom Software">Software Custom</h3>
+                        <p data-it="Progettiamo e realizziamo software personalizzati per ottimizzare i processi aziendali." data-en="We design and implement customized software to optimize business processes.">Progettiamo e realizziamo software personalizzati per ottimizzare i processi aziendali.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="ui-ux-design.svg" alt="UI/UX Design">
+                        <h3 data-it="UI/UX Design" data-en="UI/UX Design">UI/UX Design</h3>
+                        <p data-it="Curiamo l'esperienza utente e l'interfaccia grafica per prodotti digitali intuitivi e coinvolgenti." data-en="We take care of the user experience and the graphic interface for intuitive and engaging digital products.">Curiamo l'esperienza utente e l'interfaccia grafica per prodotti digitali intuitivi e coinvolgenti.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="come-funziona">
             <div class="container">
-                <h2 class="section-title" data-key="contact-title">Contattaci</h2>
-                <p class="contact-subtitle" data-key="contact-subtitle">Siamo pronti a discutere del tuo prossimo progetto.</p>
-                <a href="mailto:info@avanzamento.com" class="contact-email">info@avanzamento.com</a>
+                <h2 data-it="Come Funziona" data-en="How it Works">Come Funziona</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-it="Contatto Iniziale" data-en="Initial Contact">Contatto Iniziale</h3>
+                            <p data-it="Ci contatti per discutere le tue esigenze e i tuoi obiettivi." data-en="Contact us to discuss your needs and goals.">Ci contatti per discutere le tue esigenze e i tuoi obiettivi.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-it="Proposta e Preventivo" data-en="Proposal and Quote">Proposta e Preventivo</h3>
+                            <p data-it="Elaboriamo una proposta dettagliata con un preventivo trasparente." data-en="We develop a detailed proposal with a transparent quote.">Elaboriamo una proposta dettagliata con un preventivo trasparente.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-it="Sviluppo e Gestione" data-en="Development and Management">Sviluppo e Gestione</h3>
+                            <p data-it="I nostri PM italiani in India supervisionano lo sviluppo del progetto." data-en="Our Italian PMs in India supervise the project development.">I nostri PM italiani in India supervisionano lo sviluppo del progetto.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-it="Consegna e Supporto" data-en="Delivery and Support">Consegna e Supporto</h3>
+                            <p data-it="Consegniamo il prodotto finito e offriamo supporto post-lancio." data-en="We deliver the finished product and offer post-launch support.">Consegniamo il prodotto finito e offriamo supporto post-lancio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chi-siamo">
+            <div class="container">
+                <div class="about-us-content">
+                    <div class="about-us-text">
+                        <h2 data-it="Chi Siamo" data-en="About Us">Chi Siamo</h2>
+                        <p data-it="Avanzamento è il partner ideale per le aziende italiane che cercano soluzioni di sviluppo software di alta qualità a costi competitivi. Grazie alla nostra presenza diretta in India con project manager italiani, garantiamo un controllo totale sui progetti, comunicazione chiara e trasparenza in ogni fase del lavoro." data-en="Avanzamento is the ideal partner for Italian companies looking for high quality software development solutions at competitive costs. Thanks to our direct presence in India with Italian project managers, we guarantee total control over projects, clear communication and transparency in every phase of the work.">Avanzamento è il partner ideale per le aziende italiane che cercano soluzioni di sviluppo software di alta qualità a costi competitivi. Grazie alla nostra presenza diretta in India con project manager italiani, garantiamo un controllo totale sui progetti, comunicazione chiara e trasparenza in ogni fase del lavoro.</p>
+                    </div>
+                    <div class="about-us-image">
+                        <img src="about-us.jpg" alt="Il nostro team">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti">
+            <div class="container">
+                <h2 data-it="Contattaci" data-en="Contact Us">Contattaci</h2>
+                <form action="mailto:info@avanzamento.it" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nome" data-it-placeholder="Nome" data-en-placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" data-it-placeholder="Email" data-en-placeholder="Email" required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Messaggio" data-it-placeholder="Messaggio" data-en-placeholder="Message" required></textarea>
+                    <button type="submit" class="btn" data-it="Invia Messaggio" data-en="Send Message">Invia Messaggio</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2024 Avanzamento. All rights reserved.</p>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="logo.svg" alt="Avanzamento Logo">
+                        <h3>Avanzamento</h3>
+                    </div>
+                    <p data-it="Il ponte tra qualità italiana e outsourcing indiano controllato." data-en="The bridge between Italian quality and controlled Indian outsourcing.">Il ponte tra qualità italiana e outsourcing indiano controllato.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 data-it="Servizi" data-en="Services">Servizi</h4>
+                    <ul>
+                        <li><a href="#servizi" data-it="Sviluppo Web" data-en="Web Development">Sviluppo Web</a></li>
+                        <li><a href="#servizi" data-it="Mobile App" data-en="Mobile App">Mobile App</a></li>
+                        <li><a href="#servizi" data-it="Software Custom" data-en="Custom Software">Software Custom</a></li>
+                        <li><a href="#servizi" data-it="UI/UX Design" data-en="UI/UX Design">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-it="Azienda" data-en="Company">Azienda</h4>
+                    <ul>
+                        <li><a href="#chi-siamo" data-it="Chi Siamo" data-en="About Us">Chi Siamo</a></li>
+                        <li><a href="#come-funziona" data-it="Il Nostro Processo" data-en="Our Process">Il Nostro Processo</a></li>
+                        <li><a href="#" data-it="Portfolio" data-en="Portfolio">Portfolio</a></li>
+                        <li><a href="#contatti" data-it="Contatti" data-en="Contacts">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-it="Contatti" data-en="Contacts">Contatti</h4>
+                    <ul>
+                        <li><a href="mailto:info@avanzamento.it">info@avanzamento.it</a></li>
+                        <li><a href="tel:+390212345678">+39 02 1234 5678</a></li>
+                        <li>Milano, Italia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Avanzamento. Tutti i diritti riservati.</p>
+            </div>
         </div>
     </footer>
 
