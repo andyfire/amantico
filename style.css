@@ -157,25 +157,27 @@ nav a:hover {
 }
 
 #come-funziona {
-    background: rgba(183, 220, 243, 0.3); /* 0.3 aggiunge opacità al colore di sfondo */
-    padding: 4rem 0;
+    background: #3498DB; /* rgba(183, 220, 243, 0.3) - 0.3 aggiunge opacità al colore di sfondo */
+    padding: 2rem 0;
 }
 
 #come-funziona h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #2A3645;
 }
 
 #come-funziona p {
     text-align: center;
+    margin: 0;
     padding: 0;
+    color: #2A3645;
 }
 
 .steps {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .step {
@@ -183,12 +185,27 @@ nav a:hover {
     align-items: center;
 }
 
+.step-content{
+    margin: 0;
+    padding: 0;
+    color: #2A3645;
+}
+
+.step-content h3{
+    margin-top: 2.5em;
+}
+
+.step-content p{
+    margin: 0;
+}
+
 .step-number {
     width: 50px;
     height: 50px;
-    background: var(--primary-color);
-    color: var(--white-color);
+    background: rgba(183, 220, 243, 0.3);
+    color: #2A3645;
     border-radius: 50%;
+    border: 3px solid #2A3645;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,14 +276,37 @@ nav a:hover {
 }
 
 #contatti {
-    background: rgba(183, 220, 243, 0.3);
-    padding: 4rem 0;
+    background: #247db9;
+    padding: 2rem 0;
 }
 
 #contatti h2 {
     text-align: center;
-    margin-bottom: 2rem;
     font-size: 2rem;
+    color: #2A3645;
+}
+
+#contatti p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2A3645;
+}
+
+.btn-contatti {
+    display: inline-block;
+    background: #2A3645;
+    color: #3498DB;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-contatti:hover {
+    background: #3498DB;
+    color: #2A3645;
+    border: 2px solid #2A3645;
 }
 
 form {
