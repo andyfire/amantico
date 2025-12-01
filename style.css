@@ -92,10 +92,10 @@ nav a:hover {
 
 #hero {
     background: var(--light-color);
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     width: 100%;
-    height: 600px;
+    height: 650px;
     background-image: url('background.jpeg'); /* percorso dell'immagine */
     background-size: cover;       /* adatta l'immagine a riempire il div */
     background-position: center;
@@ -111,9 +111,7 @@ nav a:hover {
 }
 
 #hero p {
-    margin-top: 24em;
     font-size: 1.2rem;
-    margin-bottom: 2rem;
     color:var(--white-color);
 }
 
@@ -277,7 +275,7 @@ nav a:hover {
 
 #contatti {
     background: #247db9;
-    padding: 2rem 0;
+    padding: 1rem;
 }
 
 #contatti h2 {
