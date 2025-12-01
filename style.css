@@ -194,27 +194,20 @@ nav a:hover {
     margin-right: 20px;
 }
 
-#chi-siamo {
+#why-us {
     padding: 4rem 0;
+    text-align: center;
 }
 
-.about-us-content {
+.why-us-content {
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    flex-direction: column; /* impila h2 e p uno sotto l’altro */
+    align-items: center;    /* centra orizzontalmente */
+    justify-content: center; /* centra verticalmente se necessario */
 }
 
-.about-us-text {
-    flex: 1;
-}
-
-.about-us-image {
-    flex: 1;
-}
-
-.about-us-image img {
-    max-width: 100%;
-    border-radius: 10px;
+#why-us h2, #why-us p {
+  text-align: center; /* assicura che il testo sia centrato */
 }
 
 #contatti {
