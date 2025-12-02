@@ -234,12 +234,51 @@
     <div id="cookie-consent-popup" style="display: none;">
         <div class="cookie-content">
             <h3 data-it="Informativa sulla Privacy" data-en="Privacy Notice">Informativa sulla Privacy</h3>
-            <p data-it="Questo sito utilizza cookie tecnici e, con il tuo consenso, cookie di profilazione di terze parti (Google Analytics) per misurare il traffico e migliorare l'esperienza dell'utente. Il responsabile del trattamento dei dati personali è Aman Hadaoui. Cliccando 'Accetta', acconsenti al loro utilizzo." data-en="This site uses technical cookies and, with your consent, third-party profiling cookies (Google Analytics) to measure traffic and improve the user experience. The data controller is Aman Hadaoui. By clicking 'Accept', you consent to their use.">Questo sito utilizza cookie tecnici e, con il tuo consenso, cookie di profilazione di terze parti (Google Analytics) per misurare il traffico e migliorare l'esperienza dell'utente. Il responsabile del trattamento dei dati personali è Aman Hadaoui. Cliccando 'Accetta', acconsenti al loro utilizzo.</p>
+            <span class="separator">|</span>
+            <p data-it="Questo sito utilizza cookie tecnici e, con il tuo consenso, cookie di profilazione di terze parti per misurare il traffico e migliorare l'esperienza dell'utente. Cliccando 'Accetta', acconsenti al loro utilizzo." data-en="This site uses technical cookies and, with your consent, third-party profiling cookies to measure traffic and improve the user experience. By clicking 'Accept', you consent to their use.">
+                Questo sito utilizza cookie tecnici e, con il tuo consenso, cookie di profilazione di terze parti per misurare il traffico e migliorare l'esperienza dell'utente. <br> Cliccando 'Accetta', acconsenti al loro utilizzo.</p>
+            <button id="open-cookie-details" class="cookie-button-link" data-id="Informativa utilizzo Cookies" data-en="Information about cookies">
+                Informativa utilizzo Cookies
+            </button>      
             <div class="cookie-buttons">
                 <button id="accept-cookies" data-it="Accetta" data-en="Accept">Accetta</button>
                 <button id="decline-cookies" data-it="Rifiuta" data-en="Decline">Rifiuta</button>
             </div>
         </div>
+    </div>
+
+    <div id="cookie-details-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            
+            <h2 data-it="Informativa Estesa sull'Utilizzo dei Cookie" data-en="Extended Information on the Use of Cookies">Informativa Estesa sull'Utilizzo dei Cookie</h2>
+            
+            <h3 data-it="Il presente sito utilizza diversi tipi di cookie:" data-en="This website uses different types of cookies:">Il presente sito utilizza diversi tipi di cookie:</h3>
+            
+            <h3 data-it="1. Cookie Tecnici (Necessari)" data-en="1. Technical Cookies (Mandatory)">1. Cookie Tecnici (Necessari)</h3>
+            <p data-it="Questi cookie sono essenziali per il corretto funzionamento del sito. Non richiedono consenso e includono:"
+                 data-en="These cookies are essential for the proper functioning of the site. They do not require consent and include:">Questi cookie sono essenziali per il corretto funzionamento del sito. Non richiedono consenso e includono:</p>
+            <ul>
+                <li data-it="Cookie di sessione: Per mantenere la sessione dell'utente."
+                    data-en="Session cookies: To maintain the user session.">Cookie di sessione: Per mantenere la sessione dell'utente.</li>
+                <li data-it="Cookie di funzionalità: Per ricordare le preferenze dell'utente (es. lingua)."
+                    data-en="Functional cookies: To remember user preferences (e.g. language).">Cookie di funzionalità: Per ricordare le preferenze dell'utente (es. lingua).</li>
+            </ul>
+
+            <h3 data-it="2. Cookie di Profilazione di Terze Parti (Google Analytics)" data-en="2. Third-Party Profiling Cookies (Google Analytics)">2. Cookie di Profilazione di Terze Parti (Google Analytics)</h3>
+            <p data-it="Il presente sito utilizza esclusivamente cookie analitici di terze parti forniti da Google Analytics, al fine di raccogliere informazioni statistiche anonime e aggregate sull’utilizzo delle pagine web (ad esempio numero di visitatori, tempo di permanenza, pagine più visitate). I dati raccolti vengono trattati da Google LLC, 
+                che può conservarli su server situati al di fuori dell’Unione Europea. L’utente può scegliere di accettare o rifiutare tali cookie tramite il banner di consenso o modificando le impostazioni del proprio browser. Per maggiori informazioni si rimanda alla Privacy Policy di Google qui sotto." 
+                data-en="This site exclusively uses third-party analytical cookies provided by Google Analytics, for the sole purpose of collecting anonymous and aggregated statistical information on web page usage (e.g., number of visitors, time spent, most visited pages). The collected data is processed by Google LLC, which may store it on servers located outside the European Union. Users can choose to accept or refuse these 
+                cookies via the consent banner or by changing their browser settings. For more information, please refer to the Privacy Policy Google below.">
+                Il presente sito utilizza esclusivamente cookie analitici di terze parti forniti da Google Analytics, al fine di raccogliere informazioni statistiche anonime e aggregate sull’utilizzo delle pagine web 
+                (ad esempio numero di visitatori, tempo di permanenza, pagine più visitate). I dati raccolti vengono trattati da Google LLC, che può conservarli su server situati al di fuori dell’Unione Europea. L’utente può scegliere di accettare o rifiutare tali 
+                cookie tramite il banner di consenso o modificando le impostazioni del proprio browser. Per maggiori informazioni si rimanda alla Privacy Policy di Google.
+            </p>
+            <a href=https://policies.google.com/privacy>Privacy Policy di Google.</a> 
+            <p>Per qualsiasi richiesta o chiarimento riguardante la privacy, si prega di contattare il titolare del trattamento dei dati all’indirizzo a.hadaoui@amantico.com.</p>
+            <p><strong>Titolare del Trattamento:</strong> Aman Hadaoui.</p>
+            
+            </div>
     </div>
 
     <script src="script.js"></script>

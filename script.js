@@ -5,6 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const acceptCookies = document.getElementById('accept-cookies');
     const declineCookies = document.getElementById('decline-cookies');
 
+
+    const openBtn = document.getElementById('open-cookie-details');
+    const modal = document.getElementById('cookie-details-modal');
+    const closeBtn = modal.querySelector('.close-button');
+
+    // Funzione per aprire il popup
+    openBtn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Funzione per chiudere il popup cliccando sulla 'X'
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Funzione per chiudere il popup cliccando fuori dal contenuto
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
     function switchLanguage(lang) {
         document.querySelectorAll('[data-it], [data-en]').forEach(el => {
             const translation = el.getAttribute(`data-${lang}`);
@@ -76,3 +98,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialLang = userLang.startsWith('en') ? 'en' : 'it';
     switchLanguage(initialLang);
 });
+
