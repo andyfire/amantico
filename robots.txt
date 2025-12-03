@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /search/
+# Permetti la scansione di tutto il resto
+Allow: /
+
+Sitemap: https://www.amantico.com/sitemap.xml
