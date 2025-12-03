@@ -91,4 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const userLang = navigator.language || navigator.userLanguage;
     const initialLang = userLang.startsWith('en') ? 'en' : 'it';
     switchLanguage('it');
+
+    const button = document.getElementById('hamburgerButton');
+    const menu = document.getElementById('mainMenu');
+
+    button.addEventListener('click', function() {
+        // Alterna la classe 'menu-open' sul menu e sul pulsante
+        menu.classList.toggle('menu-open');
+        button.classList.toggle('is-active'); // Puoi usare questa classe per animare l'hamburger in X
+    });
 });
