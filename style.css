@@ -118,6 +118,44 @@ header .container {
     .menu-open {
         display: flex !important; /* Mostra il menu quando questa classe è attiva */
     }
+
+    /* 1. LAYOUT DEL CONTENUTO: FORZIAMO LA COLONNA */
+    .cookie-content {
+        flex-direction: column;
+        align-items: stretch; /* Stira gli elementi su tutta la larghezza */
+        text-align: center;
+    }
+
+    /* 2. NASCONDI ELEMENTI INGOMBRANTI */
+    /* Il separatore verticale non ha senso su un layout a colonna */
+    .separator {
+        display: none; 
+    }
+
+    /* 3. TESTO E BOTTONI IN LINEA (per mobile) */
+    .cookie-content p {
+        /* Aumenta lo spazio in basso per separare dal testo successivo */
+        margin-bottom: 10px; 
+    }
+    
+    /* Sposta il link di dettaglio sopra i pulsanti principali */
+    #open-cookie-details {
+        order: 3;
+        margin-top: 5px;
+    }
+
+    /* I pulsanti di accettazione/rifiuto sono in una riga separata, centrati */
+    .cookie-buttons {
+        order: 4; /* Vengono dopo il link informativo */
+        width: 100%;
+        justify-content: center; /* Centra i due pulsanti in orizzontale */
+    }
+
+    /* Rendi i pulsanti più grandi per il tocco */
+    #cookie-consent-popup button {
+        padding: 10px 18px;
+        font-size: 16px; 
+    }
 }
 
 nav {
