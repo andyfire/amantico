@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadGoogleAnalytics() {
         const gaScript = document.createElement('script');
         gaScript.async = true;
-        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID'; // Sostituisci con il tuo ID Google Analytics
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-61QECESWLV'; // Sostituisci con il tuo ID Google Analytics
         document.head.appendChild(gaScript);
 
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'YOUR_GA_ID'); // Sostituisci con il tuo ID Google Analytics
+        gtag('config', 'G-61QECESWLV'); // Sostituisci con il tuo ID Google Analytics
     }
 
     const consent = localStorage.getItem('cookie_consent');
@@ -91,4 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const userLang = navigator.language || navigator.userLanguage;
     const initialLang = userLang.startsWith('en') ? 'en' : 'it';
     switchLanguage('it');
+
+    const button = document.getElementById('hamburgerButton');
+    const menu = document.getElementById('mainMenu');
+
+    button.addEventListener('click', function() {
+        // Alterna la classe 'menu-open' sul menu e sul pulsante
+        menu.classList.toggle('menu-open');
+        button.classList.toggle('is-active'); // Puoi usare questa classe per animare l'hamburger in X
+    });
 });

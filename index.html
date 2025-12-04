@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amantico | web solutions</title>
+    <title>Amantico | Web solutions</title>
+    <meta name="description" content="Amantico offre a prezzi competitivi consulenza IT, sviluppo software e soluzioni di trasformazione digitale gestendo personali specializzato direttamente dall'India.">
+    <link rel="canonical" href="https://www.amantico.com/">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Amantico | Web solutions">
+    <meta property="og:description" content="Amantico offre a prezzi competitivi consulenza IT, sviluppo software e soluzioni di trasformazione digitale gestendo personali specializzato direttamente dall'India.">
+    <meta property="og:url" content="https://www.amantico.com/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +26,14 @@
             <div class="logo">
                 <img src="logo.png" alt="Amantico Logo">
                 <h1>AMANTICO</h1>
+                <button class="hamburger-btn" aria-label="Menu" id="hamburgerButton">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-            <nav>
-                <ul>
+            <nav id="mainNav">
+                <ul id="mainMenu">
                     <li><a href="#servizi" data-it="Servizi" data-en="Services">Servizi</a></li>
                     <li><a href="#come-funziona" data-it="Come Funziona" data-en="How it Works">Come Funziona</a></li>
                     <li><a href="#why-us" data-it="Perchè noi" data-en="Why Us">Perchè noi</a></li>
@@ -212,22 +227,107 @@
                         <li><a href="#why-us" data-it="Perchè noi" data-en="Why us">Perchè noi</a></li>
                         <li><a href="#come-funziona" data-it="Il Nostro Processo" data-en="Our Process">Il Nostro Processo</a></li>
                         <!--<li><a href="#" data-it="Portfolio" data-en="Portfolio">Portfolio</a></li>-->
-                        <li><a href="#contatti" data-it="Contatti" data-en="Contacts">Dove contattarci</a></li>
+                        <li><a href="#contatti" data-it="Scrivici" data-en="Write us">Scrivici</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4 data-it="Contatti" data-en="Contacts">Contatti</h4>
-                    <ul>
-                        <li><a href="mailto:contact@amantico.com">contact@amantico.com</a></li>
-                        <li><a href="tel:+918850259146">+91 8850259146</a></li>
-                        <li>Mehra compound, Saki Naka, Mumbai 400072, India</li>
-                        <li><a href="tel:+393285645351">+39 3285645351</a></li>
-                        <li>Via Ugo Betti 18, Seregno MB 20831, Italia</li>
-                    </ul>
+                    <table style="border-collapse: collapse; color: white;">
+                        <tbody>
+
+                            <!-- EMAIL -->
+                            <tr>
+                                <td style="padding-top: 0.5em; padding-right: 0.5em; vertical-align: top;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </td>
+                                <td style="padding-top: 0.2em; vertical-align: top;">
+                                    <a href="mailto:contact@amantico.com" style="color:white; text-decoration:none;">
+                                        contact@amantico.com
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- PHONE INDIA -->
+                            <tr>
+                                <td style="padding-top: 0.5em; vertical-align: top;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 
+                                                19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72
+                                                c.15 1.5.47 2.94.99 4.31a.99.99 0 0 1-.35 1.01L6.97 11.3
+                                                c-.56.56-.63 1.45-.16 2.05a16.89 16.89 0 0 0 4.14 4.14
+                                                c.6.47 1.49.4 2.05-.16l2.35-2.35a.99.99 0 0 1 1.01-.35
+                                                c1.37.52 2.81.84 4.31.99A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </td>
+                                <td style="padding-top: 0.6em; vertical-align: top;">
+                                    <a href="tel:+918850259146" style="color:white; text-decoration:none;">
+                                        +91 8850259146
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- ADDRESS INDIA -->
+                            <tr>
+                                <td style="padding-top: 0.5em; vertical-align: top;">
+                                    <svg role="img" aria-label="Indirizzo azienda" xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 24 24" fill="none" style="color: white;">
+                                        <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13
+                                        c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                                    </svg>
+                                </td>
+                                <td style="padding-top: 0.2em; vertical-align: top;">
+                                    Mehra compound, Sakinaka, Mumbai 400072, India
+                                </td>
+                            </tr>
+
+                            <!-- PHONE ITALY -->
+                            <tr>
+                                <td style="padding-top: 0.5em; vertical-align: top;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 
+                                                19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72
+                                                c.15 1.5.47 2.94.99 4.31a.99.99 0 0 1-.35 1.01L6.97 11.3
+                                                c-.56.56-.63 1.45-.16 2.05a16.89 16.89 0 0 0 4.14 4.14
+                                                c.6.47 1.49.4 2.05-.16l2.35-2.35a.99.99 0 0 1 1.01-.35
+                                                c1.37.52 2.81.84 4.31.99A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </td>
+                                <td style="padding: 0.2em; vertical-align: top;">
+                                    <a href="tel:+393285645351" style="color:white; text-decoration:none;">
+                                        +39 3285645351
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- ADDRESS ITALY -->
+                            <tr>
+                                <td style="padding-top: 0.5em; vertical-align: top;">
+                                    <svg role="img" aria-label="Indirizzo azienda" xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 24 24" fill="none" style="color: white;">
+                                        <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13
+                                        c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                                    </svg>
+                                </td>
+                                <td style="padding-top: 0.2em; vertical-align: top;">
+                                    Via Ugo Betti 18, Seregno MB 20831, Italia
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="copyright">
-                <p>P.IVA 13994580960 | &copy; 2025 Amantico. Tutti i diritti riservati.</p>
+                <p data-it="P.IVA 13994580960 | &copy; 2025 Amantico. Tutti i diritti riservati." data-en="P.IVA 13994580960 | &copy; 2025 Amantico. All rights reserved.">P.IVA 13994580960 | &copy; 2025 Amantico. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
