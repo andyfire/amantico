@@ -92,12 +92,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialLang = userLang.startsWith('en') ? 'en' : 'it';
     switchLanguage('it');
 
-    const button = document.getElementById('hamburgerButton');
+    const hamburgerButton  = document.getElementById('hamburgerButton');
     const menu = document.getElementById('mainMenu');
+    const menuLinks = document.querySelectorAll("#mainMenu a");
 
-    button.addEventListener('click', function() {
+    hamburgerButton .addEventListener('click', function() {
         // Alterna la classe 'menu-open' sul menu e sul pulsante
         menu.classList.toggle('menu-open');
-        button.classList.toggle('is-active'); // Puoi usare questa classe per animare l'hamburger in X
+        hamburgerButton .classList.toggle('is-active'); // Puoi usare questa classe per animare l'hamburger in X
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            menu.classList.remove("menu-open");
+            hamburgerButton.classList.remove("is-active");
+        });
     });
 });
