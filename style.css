@@ -424,13 +424,19 @@ footer {
 }
 
 .footer-column li {
+    display: flex; 
+    align-items: center; 
+    gap: 6px;
     margin-bottom: 0.5rem;
+    color: var(--white-color);
+    font-size: 15px;
 }
 
 .footer-column a {
     text-decoration: none;
     color: var(--light-color);
     transition: color 0.3s ease;
+    margin-bottom: 0.5em;
 }
 
 .footer-column a:hover {
