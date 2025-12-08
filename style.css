@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3498DB;
+    --primary-color: #247db9;
     --secondary-color: #F9D907;
     --dark-color: #2c3e50;
     --light-color: #ecf0f1;
@@ -18,7 +18,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
-    color: #3498DB;
+    color: #247db9;
 }
 
 header {
@@ -86,15 +86,15 @@ nav li {
     margin-left: 20px;
 }
 
-nav a {
+#mainMenu li a:hover{       
+        color: #247db9;/* colore al passaggio */
+}
+
+#mainMenu li a {
     text-decoration: none;
     color: var(--dark-color);
     font-weight: 500;
     transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--primary-color);
 }
 
 .language-switcher a {
@@ -110,6 +110,12 @@ nav a:hover {
 .language-switcher a.active {
     background: var(--primary-color);
     color: var(--white-color);
+    border-color: var(--primary-color);
+}
+
+.language-switcher a:hover {
+    background: var(--primary-color);
+    color: var(--dark-color);
     border-color: var(--primary-color);
 }
 
@@ -165,7 +171,7 @@ nav a:hover {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #3498DB;
+    color: #247db9;
 }
 
 .services-grid {
@@ -344,7 +350,7 @@ nav a:hover {
 }
 
 .btn-contatti:hover {
-    background: #3498DB;
+    background: #247db9;
     color: #2A3645;
     border: 2px solid #2A3645;
 }
@@ -499,7 +505,7 @@ table td {
 }
 
 #accept-cookies {
-    background-color: #3498DB;
+    background-color: #247db9;
     color: white;
 }
 
@@ -661,7 +667,7 @@ table td {
     }    
     /* 3. CLASSE PER MOSTRARE IL MENU (Aggiunta con JS) */
     .menu-open {
-        display: flex !important; /* Mostra il menu quando questa classe è attiva */
+        display: flex!important; /* Mostra il menu quando questa classe è attiva */
     }
 
     .step {
